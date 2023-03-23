@@ -1,21 +1,32 @@
 """!
-@file display_oled_i2c_exemplo.py
-@brief Programa para escrever em um display OLED I2C de 128x64 usando o Raspberry Pi Pico e MicroPython.
-@details Este programa utiliza a biblioteca ssd1306 para escrever em um display OLED de 128x64 via barramento I2C.
+@file display_oled_spi_128x32_exemplo.py
+@brief Programa para escrever em um display OLED SPI de 128x32 usando o Raspberry Pi Pico e MicroPython.
+@details Este programa utiliza a biblioteca ssd1306 para escrever em um display OLED de 128x32 via comunicação SPI.
          Referência: https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html
 @author Rodrigo França
 @date 17/03/2023
 """
 
-import machine
-import ssd1306
+# Importa as classes Pin e SPI da biblioteca machine para controlar o hardware do Raspberry Pi Pico
+from machine import Pin, SPI
+# Importa a classe SSD1306_SPI da biblioteca ssd1306.py
+from ssd1306 import SSD1306_SPI
 
-# Inicializa o display OLED I2C
-# Utiliza o I2C0 com os pinos GPIO9 (SCL) e GPIO8 (SDA)
-i2c = machine.I2C(0, scl=machine.Pin(9), sda=machine.Pin(8), freq=100000)
-# Utiliza o I2C1 com os pinos GPIO7 (SCL) e GPIO6 (SDA)
-#i2c = machine.I2C(1, scl=machine.Pin(7), sda=machine.Pin(6), freq=100000)
-display = ssd1306.SSD1306_I2C(128, 64, i2c)
+# Define os pinos do Raspberry Pi Pico conectados ao barramento SPI 0
+spi0_sck_pin = 2
+spi0_mosi_pin = 3
+spi0_miso_pin = 4
+
+# Define os pinos do Raspberry Pi Pico conectados ao display OLED SPI
+display_dc = 0  # Data/command
+display_rst = 1 # Reset
+display_cs = 5  # Chip select, alguns modulos não tem esse pino
+
+# Inicializa o SPI0 com os pinos GPIO2 (SCK), GPIO3 (MOSI) e GPIO4 (MISO)
+spi0 = SPI(0, baudrate=1000000, polarity=1, phase=0, sck=Pin(spi0_sck_pin), mosi=Pin(spi0_mosi_pin), miso=Pin(spi0_miso_pin))
+
+# Inicializa o display OLED SPI de 128x32
+display = SSD1306_SPI(128, 32, spi0, Pin(display_dc), Pin(display_rst), Pin(display_cs))
 
 # Limpa o display
 display.fill(0)
@@ -33,9 +44,6 @@ display.text('MicroPython', 40, 0, 1)  # desenha algum texto em x = 40, y = 0 , 
 display.text('SSD1306', 40, 12, 1)     # desenha algum texto em x = 40, y = 12, cor = 1
 display.text('OLED 128x64', 40, 24, 1) # desenha algum texto em x = 40, y = 24, cor = 1
 display.show()                         # escreve o conteúdo do FrameBuffer na memória do display
-
-# Escreve na última linha do display
-display.text("Hello World!", 16, 54)
 
 # Atualiza o display
 display.show()

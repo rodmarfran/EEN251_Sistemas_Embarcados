@@ -6,7 +6,7 @@
 @date 2023-03-17
 """
 
-# Importa a classe Pin da biblioteca machine para controlar os pinos do Raspberry Pi Pico
+# Importa a classe Pin da biblioteca machine para controlar o hardware do Raspberry Pi Pico
 from machine import Pin
 # Importa a biblioteca utime para usar funções relacionadas ao tempo
 import utime
