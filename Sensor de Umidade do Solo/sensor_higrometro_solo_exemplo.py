@@ -1,12 +1,12 @@
 """!
 @file sensor_higrometro_solo_exemplo.py
-@author Rodrigo França
 @brief Sensor de Umidade do Solo (Higrômetro de Solo) com Raspberry Pi Pico
 @details Este programa utiliza a Raspberry Pi Pico para ler o estado do sensor higrômetro de solo
          e exibir no console se o solo está umido ou seco. O código permite o uso de interrupções
          para lidar com as mudanças de estado do sensor (saída digital),  possui um debounce do sensor e 
 		 realiza também medição da saída analógica do sensor.
          Referência: https://www.eletrogate.com/modulo-sensor-de-umidade-de-solo/
+@author Rodrigo França
 @date 2023-03-17
 """
 

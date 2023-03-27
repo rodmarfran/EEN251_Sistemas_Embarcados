@@ -1,12 +1,12 @@
 """!
 @file sensor_gas_mq2_exemplo.py
-@author Rodrigo França
 @brief Sensor de Gases Inflamáveis MQ-2 com Raspberry Pi Pico
 @details Este programa utiliza a Raspberry Pi Pico para ler o estado do sensor de gases inflamáveis MQ-2
          e exibir no console se foi detectado gás inflamável ou não. O código permite o uso de interrupções
          para lidar com as mudanças de estado do sensor (saída digital),  possui um debounce do sensor e 
 		 realiza também medição da saída analógica do sensor.
          Referência: https://blog.eletrogate.com/sistema-anti-incendia-sensor-de-gases-inflamaveis-com-arduino/
+@author Rodrigo França
 @date 2023-03-17
 """
 

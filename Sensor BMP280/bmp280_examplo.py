@@ -4,13 +4,13 @@
 @details Este programa utiliza a biblioteca bmp280 para ler os valores do sensor BMP280 via barramento I2C.
          A temperatura e a pressão são exibidas no console a cada segundo.
          Referência: https://github.com/dafvid/micropython-bmp280
-@autor Rodrigo França
-@data 17/03/2023
+@author Rodrigo França
+@date 2023-03-17
 """
 
 # Importa as classes Pin e I2C da biblioteca machine para controlar o hardware do Raspberry Pi Pico
 from machine import Pin, I2C
-# Importa a classe HCSR04 da biblioteca bmp280.py
+# Importa a classe BMP280 da biblioteca bmp280.py
 from bmp280 import BMP280
 # Importa a biblioteca utime para usar funções relacionadas ao tempo
 import utime

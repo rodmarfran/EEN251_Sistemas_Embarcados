@@ -1,8 +1,10 @@
 """!
 @file hcsr04.py
-@author Seu Nome
 @brief Biblioteca para controlar o módulo ultrassônico HC-SR04 com Raspberry Pi Pico e MicroPython
-@details Essa biblioteca fornece uma classe simples para medir distâncias usando o sensor ultrassônico HC-SR04 e um Raspberry Pi Pico rodando MicroPython.
+@details Essa biblioteca fornece uma classe simples para medir distâncias usando o sensor ultrassônico 
+         HC-SR04 e um Raspberry Pi Pico rodando MicroPython.
+         Referência: https://randomnerdtutorials.com/micropython-hc-sr04-ultrasonic-esp32-esp8266/
+@author Rodrigo França
 @date 2023-03-17
 """
 

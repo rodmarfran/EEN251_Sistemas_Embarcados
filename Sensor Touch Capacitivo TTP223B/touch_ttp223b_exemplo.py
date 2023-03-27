@@ -1,11 +1,11 @@
 """!
-@file touch_ttp223b_exemplo.py
 @author Rodrigo França
 @brief Sensor Touch Capacitivo TTP223B com Raspberry Pi Pico
 @details Este programa utiliza a Raspberry Pi Pico para ler o estado do sensor touch capacitivo TTP223B
          e exibir no console se um toque foi detectado ou encerrado. O código permite o uso de interrupções
          para lidar com as mudanças de estado do sensor.
          Referência: https://www.robocore.net/sensor-ambiente/sensor-touch-capacitivo-ttp223b/
+@file touch_ttp223b_exemplo.py
 @date 2023-03-17
 """
 

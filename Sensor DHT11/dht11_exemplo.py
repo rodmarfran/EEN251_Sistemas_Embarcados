@@ -4,8 +4,8 @@
 @details Este programa utiliza a biblioteca dht para ler os valores do sensor DHT11.
          A temperatura e a umidade são exibidas no console a cada dois segundos.
          Referência: https://docs.micropython.org/en/latest/esp8266/tutorial/dht.html
-@autor Rodrigo França
-@data 17/03/2023
+@author Rodrigo França
+@date 2023-03-17
 """
 
 # Importa as classe Pin da biblioteca machine para controlar o hardware do Raspberry Pi Pico

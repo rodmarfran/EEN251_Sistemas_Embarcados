@@ -1,12 +1,12 @@
 
 """!
 @file sensor_obstaculo_ir_exemplo.py
-@author Rodrigo França
 @brief Sensor de Obstáculo por Infravermelho com Raspberry Pi Pico
 @details Este programa utiliza a Raspberry Pi Pico para ler o estado do sensor de obstáculo infravermelho
          e exibir no console se um obstáculo foi detectado ou removido. O código permite o uso de interrupções
          para lidar com as mudanças de estado do sensor e possui um debounce do sensor.
          Referência: https://www.eletrogate.com/sensor-de-obstaculo-reflexivo-infravermelho
+@author Rodrigo França
 @date 2023-03-17
 """
 

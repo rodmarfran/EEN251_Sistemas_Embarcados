@@ -1,11 +1,11 @@
 """!
 @file pir_hcsr501_exemplo.py
-@author Rodrigo França
 @brief Sensor de Movimento PIR HC-SR501 com Raspberry Pi Pico
 @details Este programa utiliza a Raspberry Pi Pico para ler o estado do sensor de movimento PIR HC-SR501
          e exibir no console se o movimento foi detectado ou encerrado. O código permite o uso de interrupções
          para lidar com as mudanças de estado do sensor.
          Referência: https://lastminuteengineers.com/pir-sensor-arduino-tutorial/
+@author Rodrigo França
 @date 2023-03-17
 """
 

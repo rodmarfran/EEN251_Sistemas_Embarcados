@@ -1,10 +1,10 @@
 """!
 @file hcsr04_exemplo.py
-@author Rodrigo França
 @brief Programa para medir a distância usando o módulo ultrassônico HC-SR04 e Raspberry Pi Pico
 @details Este programa demonstra como utilizar a biblioteca hcsr04.py para medir a distância usando 
          um sensor ultrassônico HC-SR04 e um Raspberry Pi Pico rodando MicroPython.
          Referência: https://randomnerdtutorials.com/micropython-hc-sr04-ultrasonic-esp32-esp8266/
+@author Rodrigo França
 @date 2023-03-17
 """
 

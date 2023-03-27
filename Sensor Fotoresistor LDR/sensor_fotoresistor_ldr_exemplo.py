@@ -1,12 +1,12 @@
 """!
 @file sensor_fotoresistor_ldr_exemplo.py
-@author Rodrigo França
 @brief Sensor Fotoresistor LDR com Raspberry Pi Pico
 @details Este programa utiliza a Raspberry Pi Pico para ler o estado do sensor fotoresistor LDR
          e exibir no console se o ambiente está claro ou escuro. O código permite o uso de interrupções
          para lidar com as mudanças de estado do sensor (saída digital),  possui um debounce do sensor e 
 		 realiza também medição da saída analógica do sensor.
          Referência: https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-fotoresistor-sensor-ldr/
+@author Rodrigo França
 @date 2023-03-17
 """
 
