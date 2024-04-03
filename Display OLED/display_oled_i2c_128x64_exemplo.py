@@ -4,7 +4,7 @@
 @details Este programa utiliza a biblioteca ssd1306 para escrever em um display OLED de 128x64 via barramento I2C.
          Referência: https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html
 @author Rodrigo França
-@date 2023-03-17
+@date 2024-04-03
 """
 
 # Importa as classes Pin e I2C da biblioteca machine para controlar o hardware do Raspberry Pi Pico
@@ -17,7 +17,7 @@ i2c0_slc_pin = 9
 i2c0_sda_pin = 8
 
 # Inicializa o I2C0 com os pinos GPIO9 (SCL) e GPIO8 (SDA)
-i2c0 = I2C(0, scl=Pin(i2c0_slc_pin), sda=Pin(i2c0_sda_pin), freq=100000)
+i2c0 = I2C(0, scl=Pin(i2c0_slc_pin), sda=Pin(i2c0_sda_pin), freq=400000)
 
 # Inicializa o display OLED I2C de 128x64
 display = SSD1306_I2C(128, 64, i2c0)
